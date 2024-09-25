@@ -1,0 +1,65 @@
+.Info {
+    padding: 1rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .Location {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 2rem;
+
+        .Details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .City {
+                color: var(--text-dark);
+            }
+
+            .Temp{
+                font-size: 3rem;
+            }
+
+            .WindSpeed {
+                font-size: 0.9rem;
+                color: var(--text-dark);
+            }
+
+            .Date {
+                font-size: 0.9rem;
+                color: var(--text-dark);
+            }
+
+            .Time {
+                margin-left: 1rem;
+            }
+        }
+
+        .Icon {
+            margin: 0 0 0 1rem;
+            // Flip to icon in this case as the icon set is different and it looks better this way
+            transform: rotateY(3.142rad);
+        }
+    }
+
+    .Stats {
+
+        .Data {
+            display: flex;
+            align-items: baseline;
+            font-size: 1.4rem;
+            padding: 0.25rem 0;
+        }
+        
+        .Label {
+            display: inline-flex;
+            width: 60%;
+            color: var(--text-dark);
+            font-size: 1.1rem;
+        }
+        .Icon {
+            margin-left: 0.5rem;
+        }
+    }
+}

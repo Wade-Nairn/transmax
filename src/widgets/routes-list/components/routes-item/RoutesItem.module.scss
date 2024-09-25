@@ -1,0 +1,73 @@
+.RouteItem {
+    border-bottom : 1px solid var(--grey-border); 
+    padding: 0.75rem;
+
+    &:last-child {
+        border: none;
+    }
+
+    .Header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        color: var(--text-dark)
+    }
+
+    .Status {
+        border-radius: 50%;
+        height: 0.7rem;
+        width: 0.7rem;
+        margin-right: 0.6rem;
+
+        &.Red {
+            background-color: var(--red);
+        }
+
+        &.Yellow {
+            background-color: var(--yellow);
+        }
+    }
+
+    .Title {
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    .DistanceText {
+        font-size: 1rem;
+        color: var(--text-darker);
+    }
+
+    .Info{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .Direction {
+            display:flex;
+            align-items: center;
+
+            .DirectionIcon {
+                // Align down arrow with the status dot.
+                margin-left: -6px;
+                color: var(--text-dark);
+            }
+
+            .Text {
+                display:flex;
+                flex-direction: column;
+                margin: 0;
+                font-size: 1rem;
+                color: var(--text-darker);
+                padding: 0.2rem;
+            }          
+        }
+        .Time {
+            
+            .TimeText {
+                font-size: 2.2rem;
+            }
+        }
+    }
+}

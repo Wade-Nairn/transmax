@@ -1,0 +1,44 @@
+.Accordion {
+    & + * {
+      margin-top: 0.5em;
+    }
+
+  
+  .Item {
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    height: auto;
+    max-height: 9999px;
+
+    &.Closed {
+      max-height: 0;
+      transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+    }
+  }
+  
+  .Title {
+    cursor: pointer;
+    padding: 0.5rem 0.75rem;
+    border: solid 1px var(--grey-border);
+    color: var(--text-dark);
+    border-radius: 0.25rem;
+    background-color: var(--grey-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    &.Open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  
+  .Content {
+    padding: 1em 0em;
+    background-color: var(--grey-light);
+    border: 1px solid var(--grey-border);
+    border-top: none;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+  }
+}
