@@ -49,7 +49,7 @@
             align-items: center;
 
             .DirectionIcon {
-                // Align down arrow with the status dot.
+                // Align down arrow with the status dot. Not ideal but the icon library only offers 1:1 ratio svgs
                 margin-left: -6px;
                 color: var(--text-dark);
             }
